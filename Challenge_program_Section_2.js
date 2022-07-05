@@ -1,4 +1,6 @@
-var num = Math.round(Math.random() * 10 + 1);
+var num = Math.round(Math.random() * 100 + 1);
+if (num > 50)
+  num = 50
 var user = "";
 while (user != num){
   user = prompt("Guess a number between 1 and 10:");
@@ -10,4 +12,7 @@ while (user != num){
     alert("Correct! you win.");
   }
 }
+var Winner = prompt("What is your name?");
+for (var x = 1; x <= 100; x++) {
+  document.write(Winner," wins!" );
 }

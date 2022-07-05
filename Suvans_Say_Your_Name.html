@@ -1,0 +1,19 @@
+<html>
+<head>
+  <title>Say your Name </title>
+  <script>
+    function SaymyName() {
+      var name = prompt("What is your name?");
+      var num = prompt("How many times shall I write your name?");
+      for ( var n = 1;n <= num ; n++) {
+        document.write( name + " ");
+      }
+    }
+    </script>
+  </head>
+<body>
+  <h1>This is a game that will say your name. </h1>
+  <h3>You will have to type your name. </h3>
+  <p>Click the button to play! </p>
+  <button onclick= "SaymyName()">Click me. </button>
+</body>
